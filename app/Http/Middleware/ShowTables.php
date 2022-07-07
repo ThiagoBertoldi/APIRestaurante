@@ -1,0 +1,25 @@
+<?php
+
+namespace App\Http\Middleware;
+
+use App\Models\Table;
+use Closure;
+use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+
+class ShowTables
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
+     * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
+     */
+    public function handle(Request $request, Closure $next)
+    {
+        $tables = Table::all();
+        
+        return new Response(view('newTable', compact('tables')));
+    }
+}

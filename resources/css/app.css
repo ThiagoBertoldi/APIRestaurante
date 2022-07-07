@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.btn_buttons{
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 20px;
+}
+
+.forms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.form_inputs{
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.center_table{
+    margin-top: 30px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+th{
+    font-size: 1rem;
+}
+
+td{
+    font-size: 0.9rem;
+}
