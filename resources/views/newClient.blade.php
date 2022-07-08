@@ -23,7 +23,7 @@
                             focus:shadow-outline" id="username" type="text" placeholder="CPF do Cliente">
                            
                             <button class=" btn_buttons bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
-                                Cadastrar Pedido
+                                Cadastrar Cliente
                             </button>
 
                             @if ($errors->any())
