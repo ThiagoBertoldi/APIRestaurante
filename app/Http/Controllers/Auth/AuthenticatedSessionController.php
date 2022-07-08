@@ -33,18 +33,7 @@ class AuthenticatedSessionController extends Controller
 
         $request->session()->regenerate();
 
-        $requests = RequestItem::all();
-
-        $data = [
-            'name' => $request->name,
-            'cpf' => $request->cpf,
-            'item' => $request->item,
-            'price' => $request->price,
-            'table' => $request->table,
-            'waiter' => $request->waiter
-        ];
-
-        return redirect()->intended(RouteServiceProvider::HOME, 302, compact('data'));
+        return redirect()->intended(RouteServiceProvider::HOME);
     }
 
     /**

@@ -6,6 +6,11 @@
                     <h1 class="title">
                         Cardápios Disponíveis
                     </h1>
+                    @can('waiter')
+                        <h3 class="subtitle">
+                            <i>Apenas o Cozinheiro consegue criar cardápios</i>
+                        </h3>
+                    @endcan
                     <table class="w-full text-sm text-left text-gray-500 dark:text-black">
                         <thead>
                             <tr>

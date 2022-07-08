@@ -31,6 +31,15 @@
                             <button class=" btn_buttons bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="submit">
                                 Cadastrar Mesa
                             </button>
+                            @if ($errors->any())
+                                <div class="errors bg-red-100 border-l-4 border-red-500 text-red-700 p-4">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li class="errors">{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
                         </div>
                     </form>
                 </div>

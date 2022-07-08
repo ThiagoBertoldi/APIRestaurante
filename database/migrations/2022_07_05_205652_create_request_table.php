@@ -15,12 +15,12 @@ return new class extends Migration
     {
         Schema::create('request_items', function (Blueprint $table) {
             $table->id();
-            $table->integer('name');
-            $table->integer('cpf');
+            $table->string('name');
+            $table->string('cpf');
             $table->string('item');
             $table->decimal('price');
-            $table->integer('table');
-            $table->integer('waiter');    
+            $table->string('table');
+            $table->string('waiter');    
             $table->timestamps();
         });
     }
